@@ -17,7 +17,6 @@ function App() {
         <Route path="/qrcodescanned" component={QRCodeScanned}/>
         <Route path="/incidentsmap" component={IncidentsMap}/>
       </Switch>
-      <h1>Hi</h1>
     </div>
   );
 }
