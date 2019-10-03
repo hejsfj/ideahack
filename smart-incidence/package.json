@@ -11,7 +11,11 @@
     "google-maps-react": "^2.0.2",
     "react": "^16.10.1",
     "react-dom": "^16.10.1",
+
+    "react-geolocated": "^3.0.1",
+
     "react-html5-camera-photo": "^1.4.3",
+
     "react-promise": "^3.0.2",
     "react-qr-reader": "^2.2.1",
     "react-router-dom": "^5.1.2",
