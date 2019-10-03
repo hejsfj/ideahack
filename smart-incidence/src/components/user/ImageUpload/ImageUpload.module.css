@@ -1,0 +1,51 @@
+.h1 {
+    font-size: 28px;
+}
+.h2 {
+    font-size: 18px;
+}
+.introtext {
+    margin: 5%;
+}
+
+.circleQRCode{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: yellow;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    left: 38%;
+}
+.circleUpload{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: yellow;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: 35%;
+    left: 62%;
+}
+.circleCam{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: yellow;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+    left: 25%;
+}
+
+.positionIcon{
+    position: center;
+}
+
