@@ -9,11 +9,16 @@ const ImageUpload = props => (
       <div className="menu-item">
         <FontAwesomeIcon icon="map-marker" />
       </div>
+
       <div className="menu-item">
-        <FontAwesomeIcon icon="plus" />
+        <a href="./ImageUpload">
+          <FontAwesomeIcon icon="plus" />
+        </a>
       </div>
       <div className="menu-item">
-        <FontAwesomeIcon icon="info" />
+        <a href="">
+          <FontAwesomeIcon icon="info" />
+        </a>
       </div>
     </div>
   </div>
