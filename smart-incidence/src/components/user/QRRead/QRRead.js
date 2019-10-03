@@ -46,11 +46,13 @@ class QRRead extends Component {
               providers will fix the situation as quick as possible
             </h2>
             <h2>{this.state.incidence}</h2>
-
-            <a href="./QRCodeAdapt"><button className={classes.button} onClick={this.takePhotoHandler}>
-              Add an Image
+            <div className={classes.divButton}>
+              <p>No QR-Code? But still a mess? Take a Photo:</p>
+              <a href="./addImage"><button className={classes.button} onClick={this.takePhotoHandler}>
+                Add an Image
             </button>
-            </a>
+              </a>
+            </div>
           </div>
         </div>
       </div>
