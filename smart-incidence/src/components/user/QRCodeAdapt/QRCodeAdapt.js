@@ -6,10 +6,11 @@ const QRCodeAdapt = props => (
   <div>
     <div className={classes.introtext}>
       <h1 className={classes.h1}>Your incident has been submitted!</h1>
-
-      <h2 className={classes.h2}>
-        We think it is a full trashcan! Are we wrong? Tell us!
-      </h2>
+      <a href="./QRCodeAdapt" className={classes.button}>
+        <FontAwesomeIcon icon="lightbulb" size="1x" />
+        <span>&nbsp;</span>We think it is a full trash can
+      </a>
+      <h2 className={classes.h2}>Are we right?</h2>
     </div>
 
     <div className={classes.container}>

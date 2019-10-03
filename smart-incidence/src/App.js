@@ -21,6 +21,7 @@ import {
   faPlus,
   faUpload,
   faInfo,
+  faLightbulb,
   faQrcode,
   faInfoCircle,
   faThumbsUp,
@@ -34,6 +35,7 @@ library.add(
   faCheckSquare,
   faCoffee,
   faCamera,
+  faLightbulb,
   faCircle,
   faMapMarker,
   faPlus,
@@ -47,7 +49,6 @@ library.add(
 );
 
 class App extends Component {
-
   render() {
     console.log(this.state);
     return (
