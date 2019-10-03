@@ -13,7 +13,32 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { faCheckSquare, faCoffee, faCamera, faCircle } from '@fortawesome/free-solid-svg-icons';
 
-library.add(fab, faCheckSquare, faCoffee, faCamera, faCircle);
+import {
+  faCheckSquare,
+  faCoffee,
+  faCamera,
+  faCircle,
+  faMapMarker,
+  faPlus,
+  faUpload,
+  faInfo,
+  faQrcode,
+  faInfoCircle
+} from '@fortawesome/free-solid-svg-icons';
+
+library.add(
+  fab,
+  faCheckSquare,
+  faCoffee,
+  faCamera,
+  faCircle,
+  faMapMarker,
+  faPlus,
+  faInfo,
+  faInfoCircle,
+  faQrcode,
+  faUpload
+);
 
 class App extends Component {
   state = {
