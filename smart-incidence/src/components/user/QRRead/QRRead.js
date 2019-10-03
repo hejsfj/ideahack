@@ -1,22 +1,32 @@
 import React, { Component } from 'react';
 import classes from './QRRead.module.css';
 import QrReader from 'react-qr-reader';
+import axios from '../../../axios-data';
 
 class QRRead extends Component {
   state = {
-    result: ''
+    incidence: null
   };
 
   handleScan = data => {
     if (data) {
       this.setState({
-        result: data
+        incidence: data
       });
+      console.log(data)
     }
   };
   handleError = err => {
     console.error(err);
   };
+
+  takePhotoHandler = () => {
+    const incidences = JSON.parse(this.state.incidence)
+    axios.post('/incidence.json', incidences)
+      .then(response => console.log(response))
+      .catch(error => console.log(error));
+  }
+
 
   render() {
     return (
@@ -27,7 +37,7 @@ class QRRead extends Component {
             onError={this.handleError}
             onScan={this.handleScan}
             style={{ width: '100%' }}
-            showViewFinder={false}
+            showViewFinder={true}
           />
           <div className={classes.introtext}>
             <h1 className={classes.h1}>Scan the QR-Code!</h1>
@@ -35,10 +45,11 @@ class QRRead extends Component {
               By scanning we will be alerted and ensure one of our servicve
               providers will fix the situation as quick as possible
             </h2>
-            <h2>{this.state.result}</h2>
+            <h2>{this.state.incidence}</h2>
 
-            <a href="" className={classes.button}>
+            <a href="./QRCodeAdapt"><button className={classes.button} onClick={this.takePhotoHandler}>
               Add an Image
+            </button>
             </a>
           </div>
         </div>

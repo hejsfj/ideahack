@@ -31,8 +31,8 @@ class IncidentsMap extends Component {
       mark = Object.values(this.state.incidence).map((obj, id) => {
         return (
           <Marker
-            key={this.state.incidence[id].incidence.id}
-            position={this.state.incidence[id].incidence.location}
+            key={id}
+            position={this.state.incidence[id].location}
           />
         );
       });
