@@ -1,12 +1,12 @@
 import React from 'react';
-import classes from './Menu.module.css';
+import './Menu.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const ImageUpload = props => (
-  <div className="classes.menu">
-    <div className="classes.menu-item">A</div>
-    <div className="classes.menu-item">B</div>
-    <div className="classes.menu-item">
+  <div className="Menu">
+    <div className="Menu-item">A</div>
+    <div className="Menu-item">B</div>
+    <div className="Menu-item">
       C<FontAwesomeIcon icon="check-square" />
       Favorite beverage: <FontAwesomeIcon icon="coffee" />
     </div>
