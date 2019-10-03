@@ -40,14 +40,14 @@ class AddImage extends Component {
           <div className={classes.introtext}>
             <h1 className={classes.h1}>Show us what happend!</h1>
             <h2 className={classes.h2}>
-              Togehter we can make the city a better and lovely place
+              Togehter we can make the city a better and lovelier place.
             </h2>
             <h2>{this.state.result}</h2>
 
             <div className={classes.divButton}>
-              <p>Take a Photo, to show us, what to do:</p>
+              <p>Take a photo, to show us what to do:</p>
               <a href="./QRCodeAdapt" className={classes.button}>
-                Add an Image
+                Upload Image
             </a>
             </div>
           </div>
