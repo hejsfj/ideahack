@@ -10,11 +10,7 @@ import './App.css';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
-<<<<<<< Updated upstream
-import { faCheckSquare, faCoffee, faCamera, faCircle, faQrcode, faUpload} from '@fortawesome/free-solid-svg-icons';
 
-library.add(fab, faCheckSquare, faCoffee, faCamera, faCircle, faQrcode, faUpload);
-=======
 import {
   faCheckSquare,
   faCoffee,
@@ -22,7 +18,9 @@ import {
   faCircle,
   faMapMarker,
   faPlus,
+  faUpload,
   faInfo,
+  faQrcode,
   faInfoCircle
 } from '@fortawesome/free-solid-svg-icons';
 
@@ -35,9 +33,10 @@ library.add(
   faMapMarker,
   faPlus,
   faInfo,
-  faInfoCircle
+  faInfoCircle,
+  faQrcode,
+  faUpload
 );
->>>>>>> Stashed changes
 
 function App() {
   return (
