@@ -61,7 +61,7 @@ class IncidentsMap extends Component {
               <FontAwesomeIcon icon="map-marker-alt" size="2x" />
             </div>
             <h1>Vallendar Stadthalle</h1>
-            <h2>Eingangslampe defekt</h2>
+            <h2>Street lamp broken</h2>
             <h3>Reportet 2 times.</h3>
           </div>
         </div>
@@ -75,8 +75,22 @@ class IncidentsMap extends Component {
               <FontAwesomeIcon icon="map-marker-alt" size="2x" />
             </div>
             <h1>Vallendar Park</h1>
-            <h2>Mülleimer überfüllt</h2>
+            <h2>Dustbin overfilled</h2>
             <h3>Reportet 4 times.</h3>
+          </div>
+        </div>
+
+        <div className={classes.POI}>
+          <div className={classes.imp}>
+            <img src={require('./street.jpg')} alt="street" />
+          </div>
+          <div className={classes.POIText}>
+            <div className={classes.icon}>
+              <FontAwesomeIcon icon="map-marker-alt" size="2x" />
+            </div>
+            <h1>Vallendar Schlossallee</h1>
+            <h2>Street damage</h2>
+            <h3>Reportet 1 time.</h3>
           </div>
         </div>
 
