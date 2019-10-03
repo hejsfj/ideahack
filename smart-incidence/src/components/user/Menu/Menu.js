@@ -4,16 +4,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const ImageUpload = props => (
   <div className="menu">
-    <div className="magic-circle"></div>
     <div className="menu-wrapper">
       <div className="menu-item">
         <FontAwesomeIcon icon="map-marker" />
       </div>
-
       <div className="menu-item">
-        <a href="./ImageUpload">
-          <FontAwesomeIcon icon="plus" />
-        </a>
+        <div className="magic-circle">
+          <a href="./ImageUpload">
+            <FontAwesomeIcon icon="plus" />
+          </a>
+        </div>
       </div>
       <div className="menu-item">
         <a href="">
