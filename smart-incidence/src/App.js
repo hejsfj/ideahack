@@ -8,7 +8,6 @@ import IncidentsMap from './components/web/IncidentsMap/IncidentsMap';
 import AddImage from './components/user/AddImage/AddImage';
 import Menu from './components/user/Menu/Menu';
 import './App.css';
-import axios from './axios-data';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
@@ -48,16 +47,6 @@ library.add(
 );
 
 class App extends Component {
-  // state = {
-  //   incidence: null
-  // }
-  // componentDidMount(){
-  //   axios.get('https://smart-incidence.firebaseio.com/incidence.json')
-  //     .then(response => {
-  //       this.setState({incidence: response.data})
-  //       console.log(response.data)
-  //     });
-  // }
 
   render() {
     console.log(this.state);

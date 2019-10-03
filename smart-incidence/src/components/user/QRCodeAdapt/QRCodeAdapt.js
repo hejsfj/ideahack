@@ -8,7 +8,7 @@ const QRCodeAdapt = props => (
       <h1 className={classes.h1}>Your incident has been submitted!</h1>
 
       <h2 className={classes.h2}>
-        We think it is a broken light bulb! Are we wrong? Tell us!
+        We think it is a full trashcan! Are we wrong? Tell us!
       </h2>
     </div>
 
