@@ -7,6 +7,12 @@ import QRCodeScanned from './components/user/QRCodeScanned/QRCodeScanned';
 import IncidentsMap from './components/web/IncidentsMap/IncidentsMap';
 import Menu from './components/user/Menu/Menu';
 
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons';
+
+library.add(fab, faCheckSquare, faCoffee);
+
 function App() {
   return (
     <div className="App">
