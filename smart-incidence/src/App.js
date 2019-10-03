@@ -40,26 +40,26 @@ library.add(
 );
 
 class App extends Component {
-  state = {
-    incidence: null
-  }
-  componentDidMount(){
-    axios.get('https://smart-incidence.firebaseio.com/incidence.json')
-      .then(response => {
-        this.setState({incidence: response.data})
-        // console.log(response.data)
-      });
-
-  }
+  // state = {
+  //   incidence: null
+  // }
+  // componentDidMount(){
+  //   axios.get('https://smart-incidence.firebaseio.com/incidence.json')
+  //     .then(response => {
+  //       this.setState({incidence: response.data})
+  //       console.log(response.data)
+  //     });
+  // }
   
   render() {
+    console.log(this.state)
     return (
       <div className="App">
         <Switch>
           <Route path="/imageupload" component={ImageUpload} />
           <Route path="/qrcodeadapt" component={QRCodeAdapt} />
-          <Route path="/qrcodescanned" component={QRCodeScanned} incidence={this.state.incidence}/>
-          <Route path="/incidentsmap" component={IncidentsMap} incidence={this.state.incidence}/>
+          <Route path="/qrcodescanned" component={QRCodeScanned} />
+          <Route path="/incidentsmap" component={IncidentsMap} />
         </Switch>
 
         <Menu></Menu>
