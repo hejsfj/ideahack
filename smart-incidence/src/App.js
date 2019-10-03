@@ -10,9 +10,9 @@ import './App.css';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
-import { faCheckSquare, faCoffee, faCamera, faCircle} from '@fortawesome/free-solid-svg-icons';
+import { faCheckSquare, faCoffee, faCamera, faCircle, faQrcode, faUpload} from '@fortawesome/free-solid-svg-icons';
 
-library.add(fab, faCheckSquare, faCoffee, faCamera, faCircle);
+library.add(fab, faCheckSquare, faCoffee, faCamera, faCircle, faQrcode, faUpload);
 
 function App() {
   return (
