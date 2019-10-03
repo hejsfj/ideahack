@@ -42,8 +42,8 @@ class QRRead extends Component {
           <div className={classes.introtext}>
             <h1 className={classes.h1}>Scan the QR-Code!</h1>
             <h2 className={classes.h2}>
-              By scanning we will be alerted and ensure one of our servicve
-              providers will fix the situation as quick as possible
+              By scanning, we will be alerted and ensure one of our servicve
+              providers will fix the situation as quick as possible.
             </h2>
             <h2>{this.state.incidence}</h2>
             <div className={classes.divButton}>
