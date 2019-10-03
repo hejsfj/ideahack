@@ -4,35 +4,52 @@ import axios from '../../../axios-data';
 
 class IncidentsMap extends Component {
   state = {
-    incidence: null
-  }
-  componentDidMount(){
-    axios.get('https://smart-incidence.firebaseio.com/incidence.json')
+    incidence: {
+      filled: '',
+      id: '',
+      location: {
+        lat: '',
+        lon: ''
+      },
+      tag: ''
+    }
+  };
+  componentDidMount() {
+    const { posts } = this.state;
+    axios
+      .get('https://smart-incidence.firebaseio.com/incidence.json')
       .then(response => {
-        this.setState({incidence: response.data})
-        console.log(response.data.incidence)
+        const data = Object.values(response.data);
+        this.setState({ incidence: data });
+        console.log(this.state.incidence);
       });
-      console.log(Object.keys(this.state))
   }
 
   render() {
-    console.log(Object.keys(this.state))
-    const loc = this.state.incidence
+    let posts = <p>No posts yet</p>;
+
     return (
       <div>
+        {this.state.incidence.id}
         <h1>IncidentsMap</h1>
         <p>MAP</p>
         <p>Incidents List</p>
 
-        <Map google={this.props.google} zoom={14} 
-        // initialCenter={}
+        <Map
+          google={this.props.google}
+          zoom={14}
+          // initialCenter={}
         >
-          <Marker name={'Current location'} position={loc} />
-          <Marker name={'Current location'} position={{ lat: 39.778519, lng: -122.405640 }} />
+          <Marker
+            name={'Current location'}
+            position={{ lat: 39.778519, lng: -122.40564 }}
+          />
         </Map>
       </div>
-    )
+    );
   }
-};
+}
 
-export default GoogleApiWrapper({ apiKey: ('AIzaSyD0B3BbdRZhNPDZCLL4xPvq09YfgeWk3VE') })(IncidentsMap);
+export default GoogleApiWrapper({
+  apiKey: 'AIzaSyD0B3BbdRZhNPDZCLL4xPvq09YfgeWk3VE'
+})(IncidentsMap);
