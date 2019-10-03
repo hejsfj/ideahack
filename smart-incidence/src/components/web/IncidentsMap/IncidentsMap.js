@@ -19,15 +19,15 @@ class IncidentsMap extends Component {
     let posts = <p>No posts yet</p>;
     let mark = null;
 
-  if (this.state.incidence){
-    mark = Object.values(this.state.incidence).map((obj, id) => {
-      return (
-        <Marker 
-        key={this.state.incidence[id].incidence.id} 
-        position={this.state.incidence[id].incidence.location} />
-      )
-    });
-  };
+    if (this.state.incidence) {
+      mark = Object.values(this.state.incidence).map((obj, id) => {
+        return (
+          <Marker
+            key={id}
+            position={this.state.incidence[id].incidence.location} />
+        )
+      });
+    };
 
     return (
       <div>
@@ -39,7 +39,7 @@ class IncidentsMap extends Component {
         <Map
           google={this.props.google}
           zoom={14}
-        initialCenter={{lat: 50.398292, lng: 7.613024}}
+          initialCenter={{ lat: 50.398292, lng: 7.613024 }}
         >
           {mark}
         </Map>
