@@ -8,14 +8,11 @@ class ImageUpload extends Component {
     return (
       <div className={classes.introtext}>
         <h1 className={classes.h1}>Scan a new incident</h1>
-<<<<<<< Updated upstream
-        <h2 className={classes.h2}>Spotted something strange? Take an image and send it to us! We will take care of this!</h2>
-=======
+
         <h2 className={classes.h2}>
-          Spotted somesthing strange? Take an image and send it to us! We will
+          Spotted something strange? Take an image and send it to us! We will
           take care of this!
         </h2>
->>>>>>> Stashed changes
 
         <a href="./QRRead">
           <div className={classes.circleQRCode}>
