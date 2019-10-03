@@ -1,0 +1,36 @@
+.h1 {
+    font-size: 28px;
+    text-align: center;
+}
+.h3 {
+    font-size: 18px;
+    text-align: center;
+}
+.introtext {
+    margin: 5%;
+}
+
+.circleDown{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 62%;
+}
+.circleUp{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+}

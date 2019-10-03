@@ -22,7 +22,9 @@ import {
   faUpload,
   faInfo,
   faQrcode,
-  faInfoCircle
+  faInfoCircle,
+  faThumbsUp,
+  faThumbsDown
 } from '@fortawesome/free-solid-svg-icons';
 
 library.add(
@@ -36,7 +38,9 @@ library.add(
   faInfo,
   faInfoCircle,
   faQrcode,
-  faUpload
+  faUpload,
+  faThumbsUp,
+  faThumbsDown
 );
 
 class App extends Component {
