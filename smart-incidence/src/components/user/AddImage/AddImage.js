@@ -33,9 +33,20 @@ class AddImage extends Component {
               onTakePhoto={dataUri => {
                 this.onTakePhoto(dataUri);
               }}
-              isFullscreen={true}
               sizeFactor={1}
             />
+          </div>
+
+          <div className={classes.introtext}>
+            <h1 className={classes.h1}>Show us what happend!</h1>
+            <h2 className={classes.h2}>
+              Togehter we can make the city a better and lovely place
+            </h2>
+            <h2>{this.state.result}</h2>
+
+            <a href="" className={classes.button}>
+              Add an Image
+            </a>
           </div>
         </div>
       </div>
