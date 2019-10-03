@@ -1,36 +1,37 @@
 import React, { Component } from 'react';
-import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
+import { Map, Marker, GoogleApiWrapper } from 'google-maps-react';
 import axios from '../../../axios-data';
 
 class IncidentsMap extends Component {
   state = {
-    incidence: {
-      filled: '',
-      id: '',
-      location: {
-        lat: '',
-        lon: ''
-      },
-      tag: ''
-    }
+    incidence: null
   };
   componentDidMount() {
-    const { posts } = this.state;
     axios
       .get('https://smart-incidence.firebaseio.com/incidence.json')
       .then(response => {
-        const data = Object.values(response.data);
+        const data = Object.values(response.data)
         this.setState({ incidence: data });
-        console.log(this.state.incidence);
       });
   }
 
   render() {
     let posts = <p>No posts yet</p>;
+    let mark = null;
+
+  if (this.state.incidence){
+    mark = Object.values(this.state.incidence).map((obj, id) => {
+      return (
+        <Marker 
+        key={this.state.incidence[id].incidence.id} 
+        position={this.state.incidence[id].incidence.location} />
+      )
+    });
+  };
 
     return (
       <div>
-        {this.state.incidence.id}
+        {/* {this.state.incidence.id} */}
         <h1>IncidentsMap</h1>
         <p>MAP</p>
         <p>Incidents List</p>
@@ -38,12 +39,9 @@ class IncidentsMap extends Component {
         <Map
           google={this.props.google}
           zoom={14}
-          // initialCenter={}
+        initialCenter={{lat: 50.398292, lng: 7.613024}}
         >
-          <Marker
-            name={'Current location'}
-            position={{ lat: 39.778519, lng: -122.40564 }}
-          />
+          {mark}
         </Map>
       </div>
     );
