@@ -3,12 +3,12 @@ import axios from '../../../axios-data';
 
 class QRCodeScanned extends Component {
     state = {
-        id: 35791,
+        id: 35792,
         tag: 'trashcan',
-        filled: false,
+        filled: true,
         location: {
-            lat: 50.398292,
-            lon: 7.613024
+            lat: 50.400204,
+            lon: 7.613670
         }
     }
 
@@ -18,8 +18,8 @@ class QRCodeScanned extends Component {
         }
 
         axios.post('/incidence.json', incidences)
-        .then(response => console.log(response))
-        .catch(error => console.log(error));
+            .then(response => console.log(response))
+            .catch(error => console.log(error));
     }
 
     render() {
