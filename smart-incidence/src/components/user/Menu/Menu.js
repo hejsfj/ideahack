@@ -4,9 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const ImageUpload = props => (
   <div className="classes.menu">
-    <div class="menu-item">A</div>
-    <div class="menu-item">B</div>
-    <div class="menu-item">
+    <div className="classes.menu-item">A</div>
+    <div className="classes.menu-item">B</div>
+    <div className="classes.menu-item">
       C<FontAwesomeIcon icon="check-square" />
       Favorite beverage: <FontAwesomeIcon icon="coffee" />
     </div>
