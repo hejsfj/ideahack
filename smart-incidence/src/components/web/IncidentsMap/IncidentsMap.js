@@ -6,8 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const style = {
   width: '100%',
-  height: '30%',
-  position: 'fixed !important'
+  height: '30vh',
 };
 
 class IncidentsMap extends Component {

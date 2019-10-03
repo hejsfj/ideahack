@@ -50,6 +50,10 @@ h3 {
 
 .map {
   height: 30vh;
+  position: sticky !important;
+  top: 0px;
+}
+map {
 }
 
 .POI {
