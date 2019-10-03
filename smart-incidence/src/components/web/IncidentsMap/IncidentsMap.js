@@ -18,6 +18,16 @@ const IncidentsMap = (props) => (
 
         <Map google={props.google} zoom={14}>
 
+        <Marker 
+                name={'Current location'} position={{lat: 37.778519, lng: -122.405640}}/>
+
+       
+
+<Marker 
+                name={'Current location'} position={{lat: 39.778519, lng: -122.405640}}/>
+
+       
+
 
 </Map>
 
