@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 import { Map, Marker, GoogleApiWrapper } from 'google-maps-react';
 import axios from '../../../axios-data';
 import classes from './IncidentsMap.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const style = {
   width: '100%',
-  height: '30%'
+  height: '30%',
+  position: 'fixed !important'
 };
 
 class IncidentsMap extends Component {
@@ -50,6 +52,37 @@ class IncidentsMap extends Component {
             {mark}
           </Map>
         </div>
+
+        <div className={classes.POI}>
+          <div className={classes.imp}>
+            <img src={require('./brokenLamp.jpg')} alt="lampe" />
+          </div>
+          <div className={classes.POIText}>
+            <div className={classes.icon}>
+              <FontAwesomeIcon icon="map-marker-alt" size="2x" />
+            </div>
+            <h1>Vallendar Stadthalle</h1>
+            <h2>Eingangslampe defekt</h2>
+            <h3>Reportet 2 times.</h3>
+          </div>
+        </div>
+
+        <div className={classes.POI}>
+          <div className={classes.imp}>
+            <img src={require('./fullBin.jpg')} alt="meull" />
+          </div>
+          <div className={classes.POIText}>
+            <div className={classes.icon}>
+              <FontAwesomeIcon icon="map-marker-alt" size="2x" />
+            </div>
+            <h1>Vallendar Park</h1>
+            <h2>Mülleimer überfüllt</h2>
+            <h3>Reportet 4 times.</h3>
+          </div>
+        </div>
+
+        <br/><br/><br/><br/>
+        
       </div>
     );
   }
