@@ -1,4 +1,4 @@
-.menu {
+.Menu {
   display: flex;
   position: fixed;
   bottom: 0px;
@@ -9,7 +9,7 @@
     10px 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-.menu-item {
+.Menu-item {
   flex: auto;
   justify-content: center;
   margin: auto 0;
