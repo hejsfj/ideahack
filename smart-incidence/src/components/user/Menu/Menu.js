@@ -6,7 +6,9 @@ const ImageUpload = props => (
   <div className="menu">
     <div className="menu-wrapper">
       <div className="menu-item">
-        <FontAwesomeIcon icon="map-marker" />
+        <a href="./IncidentsMap">
+          <FontAwesomeIcon icon="map-marker" />
+        </a>
       </div>
       <div className="menu-item">
         <div className="magic-circle">

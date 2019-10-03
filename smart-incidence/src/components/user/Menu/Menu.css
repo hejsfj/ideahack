@@ -16,11 +16,19 @@
 
 .magic-circle {
   width: 10rem;
-  height: 10rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
   background-color: #f5ff44;
   border-top-left-radius: 5rem;
   border-top-right-radius: 5rem;
   margin: auto;
+}
+
+a {
+  color: #000000;
 }
 
 .menu-wrapper {

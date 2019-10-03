@@ -1,5 +1,8 @@
 import jsQR from 'jsqr';
 
+// Installieren für QR Code Scannen eines Bilds
+// npm install jsqr --save  
+
 // Bekommmt hochgeladenes Image
 function searchQR(img){
     
