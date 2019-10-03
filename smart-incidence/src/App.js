@@ -25,7 +25,8 @@ import {
   faQrcode,
   faInfoCircle,
   faThumbsUp,
-  faThumbsDown
+  faThumbsDown,
+  faMapMarkerAlt
 } from '@fortawesome/free-solid-svg-icons';
 import QRRead from './components/user/QRRead/QRRead';
 
@@ -42,7 +43,8 @@ library.add(
   faQrcode,
   faUpload,
   faThumbsUp,
-  faThumbsDown
+  faThumbsDown,
+  faMapMarkerAlt
 );
 
 class App extends Component {
