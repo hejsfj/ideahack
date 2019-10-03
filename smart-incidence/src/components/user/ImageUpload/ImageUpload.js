@@ -17,14 +17,14 @@ class ImageUpload extends Component {
 
           <div className={classes.container}>
             <a href="./QRRead">
-              <div className={classes.circleQRCode}>
+              <div className={classes.circle}>
                 <div className={classes.icon}>
-                  <FontAwesomeIcon icon="qrcode" size="2x" />
+                  <FontAwesomeIcon icon="qrcode" size="4x" />
                 </div>
               </div>
             </a>
             <a href="./AddImage">
-              <div className={classes.circleCam}>
+              <div className={classes.circle}>
                 <div className={classes.icon}>
                   <FontAwesomeIcon icon="camera" size="4x" />
                 </div>
