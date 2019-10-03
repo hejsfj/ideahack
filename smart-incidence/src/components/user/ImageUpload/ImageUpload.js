@@ -1,29 +1,42 @@
-import React from 'react';
+import React, { Component } from 'react';
 import classes from './ImageUpload.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import QrReader from 'react-qr-reader';
 
-const ImageUpload = (props) => (
-    <div className={classes.introtext}>
+class ImageUpload extends Component {
+  render() {
+    return (
+      <div className={classes.introtext}>
         <h1 className={classes.h1}>Scan a new incident</h1>
+<<<<<<< Updated upstream
         <h2 className={classes.h2}>Spotted something strange? Take an image and send it to us! We will take care of this!</h2>
+=======
+        <h2 className={classes.h2}>
+          Spotted somesthing strange? Take an image and send it to us! We will
+          take care of this!
+        </h2>
+>>>>>>> Stashed changes
 
-        <div className={classes.circleQRCode}>
+        <a href="./QRRead">
+          <div className={classes.circleQRCode}>
             <div className={classes.icon}>
-                <FontAwesomeIcon icon="qrcode" size="2x"/>
+              <FontAwesomeIcon icon="qrcode" size="2x" />
             </div>
-        </div>
+          </div>
+        </a>
         <div className={classes.circleUpload}>
-            <div className={classes.icon}>
-                <FontAwesomeIcon icon="upload" size="2x"/>
-            </div>
+          <div className={classes.icon}>
+            <FontAwesomeIcon icon="upload" size="2x" />
+          </div>
         </div>
         <div className={classes.circleCam}>
-            <div className={classes.icon}>
-                <FontAwesomeIcon icon="camera" size="4x"/>
-            </div>
+          <div className={classes.icon}>
+            <FontAwesomeIcon icon="camera" size="4x" />
+          </div>
         </div>
-    </div>
-
-);
+      </div>
+    );
+  }
+}
 
 export default ImageUpload;

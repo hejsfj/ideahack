@@ -5,6 +5,7 @@ import ImageUpload from './components/user/ImageUpload/ImageUpload';
 import QRCodeAdapt from './components/user/QRCodeAdapt/QRCodeAdapt';
 import QRCodeScanned from './components/user/QRCodeScanned/QRCodeScanned';
 import IncidentsMap from './components/web/IncidentsMap/IncidentsMap';
+import AddImage from './components/user/AddImage/AddImage';
 import Menu from './components/user/Menu/Menu';
 import './App.css';
 import axios from './axios-data';
@@ -26,6 +27,7 @@ import {
   faThumbsUp,
   faThumbsDown
 } from '@fortawesome/free-solid-svg-icons';
+import QRRead from './components/user/QRRead/QRRead';
 
 library.add(
   fab,
@@ -54,9 +56,9 @@ class App extends Component {
   //       console.log(response.data)
   //     });
   // }
-  
+
   render() {
-    console.log(this.state)
+    console.log(this.state);
     return (
       <div className="App">
         <Switch>
@@ -64,6 +66,8 @@ class App extends Component {
           <Route path="/qrcodeadapt" component={QRCodeAdapt} />
           <Route path="/qrcodescanned" component={QRCodeScanned} />
           <Route path="/incidentsmap" component={IncidentsMap} />
+          <Route path="/qrread" component={QRRead} />
+          <Route path="/addimage" component={AddImage} />
         </Switch>
 
         <Menu></Menu>
