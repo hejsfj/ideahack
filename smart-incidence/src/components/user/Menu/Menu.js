@@ -1,8 +1,11 @@
 import React from 'react';
+import './Menu.css';
 
 const ImageUpload = props => (
-  <div>
-    <h1>FUCK YES MENU</h1>
+  <div class="menu">
+    <div class="menu-item">A</div>
+    <div class="menu-item">B</div>
+    <div class="menu-item">C</div>
   </div>
 );
 
