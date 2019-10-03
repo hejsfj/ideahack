@@ -4,16 +4,33 @@ import axios from '../../../axios-data';
 
 class IncidentsMap extends Component {
   state = {
-    incidence: null
+    incidence: {
+      filled: '',
+      id: '',
+      location: {
+        lat: '',
+        lon: ''
+      },
+      tag: ''
+    }
   };
-
-  render() {
-    const loc = this.state.incidence;
+  componentDidMount() {
+    const { posts } = this.state;
+    axios
+      .get('https://smart-incidence.firebaseio.com/incidence.json')
+      .then(response => {
+        const data = Object.values(response.data);
+        this.setState({ incidence: data });
+        console.log(this.state.incidence);
+      });
   }
 
   render() {
+    let posts = <p>No posts yet</p>;
+
     return (
       <div>
+        {this.state.incidence.id}
         <h1>IncidentsMap</h1>
         <p>MAP</p>
         <p>Incidents List</p>
