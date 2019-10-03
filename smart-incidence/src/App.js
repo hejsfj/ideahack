@@ -11,7 +11,6 @@ import axios from './axios-data';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
-import { faCheckSquare, faCoffee, faCamera, faCircle } from '@fortawesome/free-solid-svg-icons';
 
 import {
   faCheckSquare,
