@@ -14,6 +14,7 @@ class QRRead extends Component {
         incidence: data
       });
       console.log(data)
+      window.location.href="./addImage";
     }
   };
   handleError = err => {
